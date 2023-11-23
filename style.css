@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #242424;
+    color: white;
+}
+
+body {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Clock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DayTimePanel {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.DayTimePanel p {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 3px 3px 5px rgb(0, 81, 255);
+}
+
+/* createFocusTimer */
+
+.focusContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+
+    height: 60vh;
+    width: 80vw;
+    font-size: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 4px 3px 10px rgb(255, 81, 0);
+
+}
+
+.controlPenal, .breakMode {
+    display: flex;
+    gap: 200px;
+
+}
+
+.controlPenal img , .breakMode img{
+    height: 100px;
+
+}
+
+
+.controlPenal p, .breakMode p {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 4px 3px 5px rgb(0, 153, 255);
+}
+
+/*  timer over  */
+
+.timeOver{
+    font-size: 130px;
+}
+
+.btn{
+    font-size: 80px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 30px;
+    width: 200px;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 980px) {
+    h1 {
+        font-size: 150px;
+
+    }
+
+    .controlPenal {
+        gap: 80px;
+    }
+
+    .timeOver{
+        font-size: 90px;
+    }
+
+    .btn{
+    font-size: 80px;
+    width: 180px;
+    bottom: 20px;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    h1 {
+        font-size: 100px
+    }
+
+    .controlPenal {
+        gap: 50px;
+    }
+    .controlPenal img{
+        height: 50px;
+    }
+    .controlPenal p{
+        font-size: 30px;
+    }
+
+    .DayTimePanel p {
+        font-size: 3rem;
+    }
+
+    .timeOver{
+        font-size: 70px;
+    }
+
+    .btn{
+    font-size: 50px;
+    width: 150px;
+    bottom: 20px;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 70px
+    }
+
+    .controlPenal {
+        gap: 30px;
+    }
+    .controlPenal img{
+        height: 50px;
+    }
+    .controlPenal p{
+        font-size: 20px;
+    }
+
+    .DayTimePanel p {
+        font-size: 20px;
+    }
+
+    .timeOver{
+        font-size: 50px;
+    }
+
+    .btn{
+    font-size: 30px;
+    width: 130px;
+    bottom: 20px;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    h1 {
+        font-size: 70px
+    }
+
+    .controlPenal {
+        gap: 30px;
+    }
+    .controlPenal img{
+        height: 50px;
+    }
+    .controlPenal p{
+        font-size: 20px;
+    }
+
+    .DayTimePanel p {
+        font-size: 25px;
+    }
+
+    .timeOver{
+        font-size: 40px;
+    }
+
+    .btn{
+    font-size: 20px;
+    width: 110px;
+    bottom: 20px;
+
+
+
+    }
+}
+
