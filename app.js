@@ -25,7 +25,7 @@ const createFocusTimer = () => {
         }
       }
     }
-  }, 1000);
+  }, 1);
 
   let mainConatiner = document.querySelector(".Clock");
 
@@ -99,6 +99,7 @@ const createFocusTimer = () => {
     }
   });
 };
+createFocusTimer();
 
 const timeBreakFunc = () => {
   // grabbing html main div
@@ -194,7 +195,6 @@ const timeBreakFunc = () => {
 
 };
 
-
 const timeOver = () => {
   let mainConatiner = document.querySelector(".Clock");
   let h1 = document.createElement("h1");
@@ -205,9 +205,13 @@ const timeOver = () => {
   btn.classList.add("btn");
   mainConatiner.appendChild(h1);
   mainConatiner.appendChild(btn);
-  let audio = new Audio("./game_over.mp3");
-    audio.play();
-
+  let audio1 = new Audio("./game_over.mp3");
+  audio1.play();
+  
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   let audio = document.getElementById("./game_over.mp3");
+  //   audio.play();
+  // });
   // Logic
 
   btn.addEventListener("click", () => {
@@ -216,7 +220,6 @@ const timeOver = () => {
     timeBreakFunc();
   });
 };
-
 const timeOverBreak = () => {
   let mainConatiner = document.querySelector(".Clock");
   let h1 = document.createElement("h1");
@@ -238,7 +241,6 @@ const timeOverBreak = () => {
   });
 };
 
-createFocusTimer()
 // start time and date logic
 
 function updateDate() {
@@ -286,3 +288,8 @@ setInterval(function () {
   updateTime();
 }, 1000);
 
+// let audio = new Audio("./game_over.mp3");
+// document.addEventListener("click", () => {
+//   audio.play();
+  
+// })

@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
 
 /* createFocusTimer */
 
-.focusContainer {
+/* .focusContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +77,7 @@ h1 {
     text-shadow: 4px 3px 5px rgb(0, 153, 255);
 }
 
-/*  timer over  */
+
 
 .timeOver{
     font-size: 130px;
@@ -219,3 +219,71 @@ h1 {
     }
 }
 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.Clock {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./967689.jpg');
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DayTimePanel {
+    display: flex;
+    position: absolute;
+    top: 0;
+    gap: 230px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.focusContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 130px;
+}
+
+.controlPenal,
+.breakMode {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    gap: 90px;
+}
+
+p {
+    font-weight: 1000;
+}
+
+/* for timeOver  */
+
+.timeOver {
+    font-size: 110px;
+}
+.btn{
+    font-size: 50px;
+    background-color: #ffffff9d;
+    padding: 2px 5px ;
+    border-radius: 24px;
+    position: absolute;
+    bottom: 19px;
+}
