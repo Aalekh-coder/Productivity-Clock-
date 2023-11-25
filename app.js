@@ -25,7 +25,7 @@ const createFocusTimer = () => {
         }
       }
     }
-  }, 1);
+  }, 1000);
 
   let mainConatiner = document.querySelector(".Clock");
 
